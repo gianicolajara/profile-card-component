@@ -17,15 +17,18 @@ html {
 
 body {
   font-size: 18px;
+}
+
+.heroe {
+  height: 720px;
   background-color: var(--dark-cyan);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   background-image: url("./../images/bg-pattern-top.svg"),
     url("./../images/bg-pattern-bottom.svg");
   background-repeat: no-repeat;
-  background-position: right 40vw bottom 45vh, 30vw 55vh;
+  background-position: right 35vw bottom 40vh, 30vw 45vh;
   background-size: 150vw;
 }
 
@@ -115,9 +118,9 @@ body {
   color: var(--dark-grayish-blue);
 }
 
-@media screen and (min-width: 968px) {
-  body {
-    background-position: right 35vw bottom 45vh, 30vw 55vh;
-    background-size: 110vw;
+@media screen and (min-width: 700px) {
+  .heroe {
+    background-position: right 45vw bottom 30vh, 45vw 35vh;
+    background-size: 80vw;
   }
 }
