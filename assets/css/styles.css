@@ -1,0 +1,121 @@
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 18px;
+  background-color: var(--dark-cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./../images/bg-pattern-top.svg"),
+    url("./../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: right 40vw bottom 45vh, 30vw 55vh;
+  background-size: 150vw;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  max-width: 100%;
+  width: 330px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 15px 50px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card__head img {
+  display: block;
+}
+.card__body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.card__body img {
+  position: absolute;
+  border-radius: 50%;
+  border: 5px solid white;
+  top: -55px;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 1em;
+  margin-top: 45px;
+
+  line-height: 1;
+  color: var(--very-dark-desaturated-blue);
+}
+
+.card__title label {
+  color: var(--dark-grayish-blue);
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.card__subtitle {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  border-top: thin solid rgb(219, 219, 219);
+  padding: 20px;
+}
+
+.card__subtitle {
+  color: var(--dark-grayish-blue);
+  font-size: 0.8em;
+}
+
+.card__footer-container p:nth-child(1) {
+  color: var(--very-dark-desaturated-blue);
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.card__footer-container p:nth-child(2) {
+  font-size: 0.5em;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin: 0;
+  color: var(--dark-grayish-blue);
+}
+
+@media screen and (min-width: 968px) {
+  body {
+    background-position: right 35vw bottom 45vh, 30vw 55vh;
+    background-size: 110vw;
+  }
+}
